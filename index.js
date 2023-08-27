@@ -8,7 +8,8 @@ app.use(express.static('public'));
 app.set('view engine', 'ejs');
 
 app.get('/',(res,req)=>{
-    res.sendFile("index.html");
+    //res.sendFile("index.html");
+    res.render('index');
 })
 
 app.get('/generate', async (req, res) => {
