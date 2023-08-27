@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QOR | QR Code Generator.</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./script.js"></script>
+</head>
+<body>
+
+    <div class="p-4">
+        <img src="./20230826_174925_0000.png" alt="logo" class="h-16 w-16">
+    </div>
+
+    <div class="flex h-screen justify-center items-start pt-20">
+
+        <div class="lg:border-2 rounded-md p-8  flex flex-col gap-4">
+            <h1 class="text-4xl font-black capitalize">Free QR Code Generator Online!</h1>
+            <form action="/generate" method="get">
+                <input type="url" name="url" id="qrUrl" class="p-2 focus:outline-none" placeholder="https://example.com">
+                <button type="submit" id="gen" class="bg-yellow-300 font-bold text-yellow-950 px-2 py-2 rounded-sm shadow-lg shadow-yellow-100">Generate!</button>
+            </form>
+            <div id="qrcon"></div>
+        </div>
+
+    </div>
+    
+   
+</body>
+</html>

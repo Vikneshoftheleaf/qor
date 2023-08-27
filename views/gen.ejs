@@ -1,0 +1,24 @@
+<html>
+
+<head>
+    <title>OOR | QR Code Generator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" href="./20230826_174925_0000.png" type="image/x-icon">
+
+    
+</head>
+
+<body class="h-screen flex justify-center items-center bg-yellow-50">
+
+    <div class="p-8 flex flex-col justify-center items-center gap-4 bg-white shadow-lg shadow-yellow-100 rounded-lg">
+        <img src="<%= qrcode %>" alt="QR Code" class="sm:h-[300px] sm:w-[300px]"  />
+        <a href="<%= qrcode %>" download="QOR.png" class="sm:text-2xl">
+            <button class="px-4 py-2 bg-yellow-300 font-semibold rounded-sm  shadow-md shadow-yellow-100">Download QR Code</button>
+        </a>
+
+    </div>
+
+
+</body>
+
+</html>
